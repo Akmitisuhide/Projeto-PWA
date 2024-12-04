@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #292929;
+    padding-bottom: 15px;
+}
+
+header{
+    background: linear-gradient(120deg, rgba(236,114,0,1) 0%, rgba(242,102,31,1) 51%, rgba(201,49,23,1) 100%);
+    padding: 8px;
+    display: grid;
+    width: 100%;
+    height: 60px;
+    color: #FFFFFF;
+    align-content: center; 
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.acessMenu, .acessMenu section{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.acessMenu section .logo{
+    height: 55px;
+    padding: 0 15px 0 15px;
+    margin: 15px 0;
+}
+
+.acessMenu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.acessMenu ul li{
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 600;
+}
+
+.acessMenu ul li a { color: white; }
+
+.acessMenu ul li:hover, .acessMenu ul li a:hover, a:hover{
+    cursor: pointer;
+    color: #c5c5c5;
+}
+
+.profile-pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 15px;
+}
+
+ul.dropdown-menu {
+    display: none; 
+    position: absolute;
+    width: 15rem;
+    background: linear-gradient(120deg, rgba(236,114,0,1) 0%, rgba(242,102,31,1) 51%, rgba(201,49,23,1) 100%);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul.dropdown-menu li {
+    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+ul.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.dropdown-menu li:hover { background: #f39843; }
+
+li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+li.dropdown {
+    position: relative;
+}
+
+nav a.bars{
+    display: none;
+}
+
+/*------------------------------Main----------------------------------*/
+
+main{
+    color: #ffffff;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+main div#acessOcultMenu{
+    display: none;
+}
+
+main h1{
+    margin: 10px;
+}
+
+section.jobProposal{
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+div.proposal{
+    background: #FFFFFF;
+    color: #333333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 5%;
+}
+
+.proposal:hover {
+    background-color: #ececec;
+    transform: scale(1.05);
+}
+
+div.proposal h2 {
+    color: #EC7200;
+    margin-bottom: 10px;
+}
+
+div.proposal p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+div.proposal ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.addToJob{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #EC7200;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.addToJob:hover{ background: #994a00; color: #c5c5c5; }
+
+
+/*------------------------------Responsivo----------------------------------*/
+
+
+
+@media (max-width: 858px) {
+    nav.acessMenu ul{
+        display: none;
+    }
+
+    main div#acessOcultMenu{
+        text-align: center;
+        justify-content: center;
+        background: #141414;
+        width: 100%;
+        color: #ffffff;
+        padding: 0;
+        font-weight: 600;
+    }
+
+    main div#acessOcultMenu ul li{
+        padding: 15px;
+        list-style: none;
+    }
+
+    main div#acessOcultMenu ul li:hover{
+        background: #3b3b3b;
+        color: #000000;
+    }
+
+    nav a.bars{
+        display: block;
+        padding: 0 20px 0 0;
+    }
+
+    nav a.bars:hover{
+        color: #c5c5c5;
+    }
+
+    .active{
+        background: #141414;
+        color: white;
+    }
+
+}

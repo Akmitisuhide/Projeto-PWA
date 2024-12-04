@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets\icons\favicon.ico">
+    <script src="https://kit.fontawesome.com/66424a9ca4.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="manifest.json">
+    <title>EstagiosInc</title>
+</head>
+<body>
+    <header>
+        <nav class="acessMenu">
+            <section>
+                <a href="#"><img class="logo" src="assets\icons\favicon-32x32.png" alt="image-job"></a>
+                <a href="#"><h1>EstagiosInc</h1></a>
+            </section>   
+            <ul>
+                <li class="dropdown">
+                    <p>Candidato</p>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Vagas</a></li>
+                        <li><a href="#">Histórico</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <p>Empresa</p>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Postar Vaga</a></li>
+                        <li><a href="#">Gerenciar Vagas</a></li>
+                        <li><a href="#">Relatórios</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <p>Instituição de Ensino</p>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                    </ul>
+                </li>
+
+                <li>Empresa</li>
+
+                <li>Contato</li>
+                <li><a class="profile-pfp" href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+
+            <a class="bars" onclick="ocultMenu()"> 
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="acessOcultMenu">
+            
+            <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Candidato</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Instituião de Ensino</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <h1>Propostas para Desenvolvedores</h1>
+        <section class="jobProposal">
+            <div class="proposal">
+                <p><b>Empresa:</b> Data Solutions Corp.</p>
+                <p><b>Localização:</b> Rio de Janeiro, RJ</p>
+                <p><b>Duração:</b> 12 meses</p>
+                <p><b>Descrição:</b> Estamos em busca de um estagiário para integrar nossa equipe de análise de dados. O candidato ideal deve ter familiaridade com ferramentas de análise e interesse em se aprofundar em projetos de ciência de dados. A principal responsabilidade será colaborar na coleta, organização e análise de dados para aprimorar nossas estratégias de negócios.</p>
+                <p><b>Benefícios:</b> Bolsa auxílio, vale-transporte, seguro de vida, e oportunidade de crescimento na empresa.</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Conhecimento básico em Excel, SQL e Python.</li>
+                    <li>Capacidade analítica e atenção aos detalhes.</li>
+                    <li>Disponibilidade para estagiar 25 horas semanais.</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+        </section>
+        <h1>Propostas para Analistas</h1>
+        <section class="jobProposal">
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+
+            <div class="proposal">
+                <p><b>Empresa:</b> Ipsum Corp.</p>
+                <p><b>Localização:</b> Lorem Ipsum, LI</p>
+                <p><b>Duração:</b> XX meses</p>
+                <p><b>Descrição:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellendus. Eaque autem quod nobis numquam alias doloribus dolor dolorum quae itaque corporis beatae saepe recusandae adipisci quasi, reprehenderit quos debitis.</p>
+                <p><b>Benefícios:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum dolores accusamus</p>
+                <p><b>Requisitos:</b></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li> Distinctio obcaecati tempora, fugiat architecto eos rerum voluptas neque!</li>
+                    <li>Harum reprehenderit magnam, quas similique minima dolorem necessitatibus</li>
+                </ul>
+                <a href="#" class="addToJob">Inscreva-se agora</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="register-service-worker.js"></script>
+</body>
+</html>
